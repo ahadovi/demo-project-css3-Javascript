@@ -1,0 +1,101 @@
+/*=========================
+ **Preset CSS
+======================== */
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
+}
+html {
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*=========================
+ **Bootstrap CSS
+======================== */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    padding: 0 15px;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.my-3 {
+    margin: 1rem 0;
+}
+
+.my-4 {
+    margin: 1.5rem 0;
+}
+.my-5{
+    margin: 2.5rem 0;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.py-3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.rounded {
+    border-radius: 0.25rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.border-right {
+    border-right: 1px solid #343a40;
+}
+
+.border-left {
+    border-left: 1px solid #343a40;
+}
+
+

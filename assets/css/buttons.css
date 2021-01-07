@@ -1,0 +1,81 @@
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #f1f1f1;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid transparent;
+    outline: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    opacity: 0.9;
+    transition: background-color, color 200ms ease-in-out;
+    max-width: calc(50% - 1rem);
+    flex: 0 0 calc(50% - 1rem);
+    margin: 0.5rem;
+}
+
+.btnPrimary {
+    color: #0b5ed7;
+    border-color: #0b5ed7;
+}
+
+.btnPrimary.active {
+    background-color: #0b5ed7;
+    color: #ffffff;
+}
+
+.btnSecondary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btnSecondary.active {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+.btnSuccess {
+    color: #198754;
+    border-color: #198754;
+}
+
+.btnSuccess.active {
+    background-color: #198754;
+    color: #ffffff;
+}
+
+.btnDanger {
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btnDanger.active {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.btnWarning {
+    color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btnWarning.active {
+    background-color: #ffc107;
+    color: #010101;
+}
+
+.btnInfo {
+    border-color: #0dcaf0;
+    color: #0dcaf0;
+}
+
+.btnInfo.active {
+    background-color: #0dcaf0;
+    color: #010101;
+}
