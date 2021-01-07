@@ -1,0 +1,96 @@
+/*All Fonts (Both online and Offline) CSS*/
+@import "fonts.css";
+/*Preset & Bootstrap CSS*/
+@import "presetBootstrap.css";
+/*Buttons CSS*/
+@import "buttons.css";
+/*Animation CSS*/
+@import "animations.css";
+/*Form CSS*/
+@import "form.css";
+
+/*=======================================================*/
+.main-wrap {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .17);
+    background-color: #f2f3f5;
+    overflow: hidden;
+}
+
+.left-bg {
+    background-color: #343a40;
+}
+
+.preview-thumb {
+    position: relative;
+    overflow: hidden;
+    max-height: 272px;
+}
+
+.img-file label {
+    color: #f1f1f1;
+    flex: 0 0 45%;
+    font-weight: 500;
+}
+
+.img-file input {
+    flex: 0 0 calc(100% - 45%);
+}
+
+.preview-thumb:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 555;
+}
+
+.preview-thumb img {
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.overlay-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.right-wrap h3 {
+    margin: 0 0 0.5rem 0;
+    font-weight: 600;
+    color: #343a40;
+}
+
+.text-btn-wrap {
+    margin: 0 -0.5rem;
+}
+
+.instruction-wrap {
+    background-color: #f2f3f5;
+    padding: 0.75rem 1rem;
+}
+
+.instruction-wrap h3 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.instruction-wrap ul {
+    margin: 0.50rem 0 0 0;
+}
+
+.instruction-wrap ul li {
+    margin-top: 0.25rem;
+    line-height: 1.375;
+}
+
