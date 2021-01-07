@@ -122,3 +122,12 @@ animationBtnStyles.forEach(e => {
         activeClass(el, 'animation-btn-wrap')
     });
 });
+
+// Button Active Class Function
+function activeClass(el, parentClass) {
+    const activeClass = document.querySelector(`.${parentClass} .btn.active`);
+    if(activeClass) {
+        activeClass.classList.remove('active');
+    }
+    el.target.classList.add('active');
+};
