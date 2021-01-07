@@ -11,6 +11,7 @@
 
 /*=======================================================*/
 .main-wrap {
+    -webkit-box-shadow: 0 8px 24px rgba(0, 0, 0, .17);
     box-shadow: 0 8px 24px rgba(0, 0, 0, .17);
     background-color: #f2f3f5;
     overflow: hidden;
@@ -28,11 +29,15 @@
 
 .img-file label {
     color: #f1f1f1;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 45%;
     flex: 0 0 45%;
     font-weight: 500;
 }
 
 .img-file input {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(100% - 45%);
     flex: 0 0 calc(100% - 45%);
 }
 
@@ -58,6 +63,8 @@
     right: 0;
     text-align: center;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: 999;
     color: #ffffff;
@@ -93,4 +100,3 @@
     margin-top: 0.25rem;
     line-height: 1.375;
 }
-

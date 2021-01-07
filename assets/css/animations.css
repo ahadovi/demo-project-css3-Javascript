@@ -1,8 +1,16 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 :root {
     --animate-duration: 1s;
     --animate-delay: 1s;
     --animate-repeat: 1;
 }
+
 .animate__animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -53,6 +61,7 @@
         transform: translate3d(0, -4px, 0) scaleY(1.02);
     }
 }
+
 @keyframes bounce {
     from,
     20%,
@@ -81,6 +90,7 @@
 
     80% {
         -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -o-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
         transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
         -webkit-transform: translate3d(0, 0, 0) scaleY(0.95);
         transform: translate3d(0, 0, 0) scaleY(0.95);
@@ -91,11 +101,14 @@
         transform: translate3d(0, -4px, 0) scaleY(1.02);
     }
 }
+
 .animate__bounce {
     -webkit-animation-name: bounce;
     animation-name: bounce;
     -webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
     transform-origin: center bottom;
+    -webkit-animation-duration: 2s;
     animation-duration: 2s;
 }
 
@@ -136,6 +149,7 @@
         transform: scale3d(1, 1, 1);
     }
 }
+
 @keyframes rubberBand {
     from {
         -webkit-transform: scale3d(1, 1, 1);
@@ -172,9 +186,11 @@
         transform: scale3d(1, 1, 1);
     }
 }
+
 .animate__rubberBand {
     -webkit-animation-name: rubberBand;
     animation-name: rubberBand;
+    -webkit-animation-duration: 2s;
     animation-duration: 2s;
 }
 
@@ -215,6 +231,7 @@
         transform: translate3d(0, 0, 0);
     }
 }
+
 @keyframes wobble {
     from {
         -webkit-transform: translate3d(0, 0, 0);
@@ -251,9 +268,11 @@
         transform: translate3d(0, 0, 0);
     }
 }
+
 .animate__wobble {
     -webkit-animation-name: wobble;
     animation-name: wobble;
+    -webkit-animation-duration: 2s;
     animation-duration: 2s;
 }
 
@@ -290,6 +309,7 @@
         transform: perspective(400px);
     }
 }
+
 @keyframes flipInX {
     from {
         -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
@@ -322,11 +342,13 @@
         transform: perspective(400px);
     }
 }
+
 .animate__flipInX {
     -webkit-backface-visibility: visible !important;
     backface-visibility: visible !important;
     -webkit-animation-name: flipInX;
     animation-name: flipInX;
+    -webkit-animation-duration: 2s;
     animation-duration: 2s;
 }
 
@@ -356,6 +378,7 @@
         transform: scale(1);
     }
 }
+
 @keyframes jackInTheBox {
     from {
         opacity: 0;
@@ -381,9 +404,11 @@
         transform: scale(1);
     }
 }
+
 .animate__jackInTheBox {
     -webkit-animation-name: jackInTheBox;
     animation-name: jackInTheBox;
+    -webkit-animation-duration: 2s;
     animation-duration: 2s;
 }
 
@@ -417,6 +442,7 @@
         opacity: 0;
     }
 }
+
 @keyframes hinge {
     0% {
         -webkit-animation-timing-function: ease-in-out;
@@ -446,6 +472,7 @@
         opacity: 0;
     }
 }
+
 .animate__hinge {
     -webkit-animation-duration: calc(1s * 2);
     animation-duration: calc(1s * 2);
@@ -454,5 +481,6 @@
     -webkit-animation-name: hinge;
     animation-name: hinge;
     -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
     transform-origin: top left;
 }

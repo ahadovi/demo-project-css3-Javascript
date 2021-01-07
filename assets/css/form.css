@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /*Forms*/
 .form-group {
     margin-bottom: 1.5rem;
@@ -20,5 +27,6 @@
     min-height: 40px;
     caret-color: #198754;
     margin-top: 0.75rem;
+    -webkit-box-shadow: 0 6px 20px rgba(0,0,0,.15);
     box-shadow: 0 6px 20px rgba(0,0,0,.15);
 }

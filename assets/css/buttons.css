@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .btn {
     display: inline-block;
     font-weight: 400;
@@ -14,8 +21,12 @@
     font-size: 1rem;
     border-radius: .25rem;
     opacity: 0.9;
+    -webkit-transition: background-color, color 200ms ease-in-out;
+    -o-transition: background-color, color 200ms ease-in-out;
     transition: background-color, color 200ms ease-in-out;
     max-width: calc(50% - 1rem);
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(50% - 1rem);
     flex: 0 0 calc(50% - 1rem);
     margin: 0.5rem;
 }
