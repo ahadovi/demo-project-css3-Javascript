@@ -52,7 +52,7 @@ const textBtnClassContent = [
 ]
 
 // Text Style Button & It's Content
-textBtnClassContent.forEach( e => {
+textBtnClassContent.forEach(e => {
     // Creating Button Inside Text button Wrap
     const textBtn = document.createElement('button');
     // Add Classes in Text changes Buttons
@@ -66,8 +66,59 @@ textBtnClassContent.forEach( e => {
     txtBtnWrap.appendChild(textBtn);
 
     // Every Button click changes overlay text Font
-    textBtn.addEventListener('click',(el) => {
+    textBtn.addEventListener('click', (el) => {
         ovrlaytxt.style.fontFamily = e.fontFamily;
         activeClass(el, 'text-btn-wrap');
+    });
+});
+
+// Animation Content & Button Classes Array
+const animationBtnStyles = [
+    {
+        btnName: 'Bounce',
+        btnClass: 'btnPrimary',
+        animateClass: 'animate__bounce'
+    },
+    {
+        btnName: 'Rubber Band',
+        btnClass: 'btnSecondary',
+        animateClass: 'animate__rubberBand'
+    },
+    {
+        btnName: 'Wobble',
+        btnClass: 'btnSuccess',
+        animateClass: 'animate__wobble'
+    },
+    {
+        btnName: 'Flip In X',
+        btnClass: 'btnDanger',
+        animateClass: 'animate__flipInX'
+    },
+    {
+        btnName: 'Jack In TheBox',
+        btnClass: 'btnWarning',
+        animateClass: 'animate__jackInTheBox'
+    },
+    {
+        btnName: 'Hinge',
+        btnClass: 'btnInfo',
+        animateClass: 'animate__hinge'
+    },
+]
+// Animation Button & It's Content
+animationBtnStyles.forEach(e => {
+    // Creating Button Inside Animation button Wrap
+    const animateBtn = document.createElement('button');
+    // Add Classes in Text changes Buttons
+    animateBtn.classList = `btn ${e.btnClass}`
+    // Add Contents in Text changes Buttons
+    animateBtn.innerText = e.btnName;
+    // button DOM Show
+    animationBtnWrap.appendChild(animateBtn);
+
+    // Add animatin classes events
+    animateBtn.addEventListener('click', (el) => {
+        ovrlaytxt.classList = `${e.animateClass} overlay-text`;
+        activeClass(el, 'animation-btn-wrap')
     });
 });
