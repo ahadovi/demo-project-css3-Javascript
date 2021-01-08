@@ -9,3 +9,4 @@
 
 #split css file as components for easy to understand
 #Support All browser prefix in css
+#Support Mobile friendly & responsive
