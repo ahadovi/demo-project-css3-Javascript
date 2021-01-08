@@ -49,10 +49,10 @@ const textBtnClassContent = [
         btnContent: 'Roboto',
         fontFamily: `'Roboto', sans-serif`
     },
-]
+];
 
 // Text Style Button & It's Content
-textBtnClassContent.forEach(e => {
+textBtnClassContent.forEach((e) => {
     // Creating Button Inside Text button Wrap
     const textBtn = document.createElement('button');
     // Add Classes in Text changes Buttons
@@ -104,13 +104,13 @@ const animationBtnStyles = [
         btnClass: 'btnInfo',
         animateClass: 'animate__hinge'
     },
-]
+];
 // Animation Button & It's Content
-animationBtnStyles.forEach(e => {
+animationBtnStyles.forEach((e) => {
     // Creating Button Inside Animation button Wrap
     const animateBtn = document.createElement('button');
     // Add Classes in Text changes Buttons
-    animateBtn.classList = `btn ${e.btnClass}`
+    animateBtn.classList = `btn ${e.btnClass}`;
     // Add Contents in Text changes Buttons
     animateBtn.innerText = e.btnName;
     // button DOM Show
@@ -119,7 +119,7 @@ animationBtnStyles.forEach(e => {
     // Add animatin classes events
     animateBtn.addEventListener('click', (el) => {
         ovrlaytxt.classList = `${e.animateClass} overlay-text`;
-        activeClass(el, 'animation-btn-wrap')
+        activeClass(el, 'animation-btn-wrap');
     });
 });
 
