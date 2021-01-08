@@ -117,3 +117,7 @@ body {
     border-left: 1px solid #343a40;
 }
 
+.d-none {
+    display: none!important;
+}
+

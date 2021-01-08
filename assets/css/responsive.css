@@ -1,0 +1,35 @@
+/*Responsive CSS*/
+@media (max-width: 767px) {
+    .col-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .main-wrap {
+        margin: 1rem 0;
+    }
+
+    .instruction-wrap {
+        display: none;
+    }
+
+    .right-wrap .instruction-wrap {
+        display: block !important;
+        background-color: #fff;
+        margin-top: 0.50rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .btn {
+        font-size: 0.9375rem;
+    }
+
+    .img-file label, input {
+        -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 50% !important;
+        flex: 0 0 50% !important;
+    }
+}
